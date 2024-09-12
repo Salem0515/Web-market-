@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css";
 
-import Ellipse1 from "./Assets/Ellipse1.png";
+import Ellipse1 from "./Assets/Ellipse_1.png";
 import Ellipse2 from "./Assets/Ellipse2.png";
 import Ellipse3 from "./Assets/Ellipse3.png";
 import Ellipse4 from "./Assets/Ellipse4.png";
