@@ -1,0 +1,77 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  background-color: transparent; /* Initial background color */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Background color when scrolled */
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav .list ul {
+  display: flex;
+  list-style: none;
+}
+
+nav .list ul li {
+  margin-right: 20px; /* Space between the links */
+}
+
+nav .list ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .list ul li a:hover {
+  color: #f94d1b; /* Color on hover */
+}
+
+.Register {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%); /* Example gradient */
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners like in the image */
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 5px 20px rgba(255, 0, 255, 0.6); /* Pinkish glowing shadow */
+}
+
+.Register:hover {
+  background: linear-gradient(90deg, rgba(255,20,20,1) 0%, rgba(20,20,255,1) 100%);
+}
+
+body {
+  padding-top: 80px; /* To prevent content from hiding under the fixed navbar */
+}
+
+@media screen and (max-width: 654px) {
+  nav .list ul {
+      display: none;
+  }
+}

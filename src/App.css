@@ -1,0 +1,258 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+
+  /* start components  */
+  .wrapper {
+    position: relative; /* This ensures the background and components are aligned relative to this container */
+    z-index: 1;
+  }
+  
+  /* end the components */
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Adjust based on your layout */
+  }
+  
+  /* Ellipse container and images */
+  .ellipse_container {
+    position: absolute; /* Allow precise positioning of images */
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower z-index to ensure it’s behind other components */
+
+  }
+  
+  .ellipse_container img {
+    position: absolute; /* Position each image absolutely */
+  }
+  
+  /* Ellipse Images - Replace these values with those from Figma */
+  .Ellipase1 {
+    width: 800px; 
+    height: 800px;
+    top: -105px;
+    left: 0px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .Ellipase2 {
+    top: 100px; 
+    left: 700px;
+  }
+  
+  .Ellipase3 {
+    top: 0px;
+    left: 1050px;
+  }
+
+  .Ellipase3_2{
+    top: 400px;
+    left: 1150px;
+  }
+  
+  .Ellipase4 {
+    top: 500px;
+    left: 121px;
+  }
+  
+  .Ellipase5 {
+    top: 690px; 
+    left: 633px;
+  }
+
+  .Ellipase5_2{
+    top: 480px;
+    left: 480px; 
+  }
+  .Ellipase5_3{
+    top: 900px;
+    left: 480px; 
+  }
+  .Ellipase5_4{
+    top: 950px;
+    left: 200px; 
+  }
+  .Ellipase5_5{
+    top: 2450px;
+    left: 1000px; 
+  }
+  
+  .Ellipase6 {
+    width: 50px; 
+    height: 50px; 
+    top: 1200px;
+    left: 650px; 
+  }
+  
+  .Ellipase7 {
+    width: 2000px; 
+    height: 2000px; 
+    top: 1700px; 
+    left: -500px; 
+  }
+  
+  .Ellipase8 {
+    width: 845px; 
+    height: 845px; 
+    top: 900px; 
+    left: 600px; 
+  }
+  
+  .Ellipase9 {
+    width: 50px;
+    height: 50px; 
+    top: 2000px; 
+    left: 1100px; 
+  }
+  
+  .Ellipase10 {
+    width: 50px; 
+    height: 50px; 
+    top: 2000px;
+    left: 50px; 
+  }
+  
+  .Ellipase10_2 {
+    width: 50px; 
+    height: 50px; 
+    top: 2580px;
+    left: 505px; 
+  }
+  .Ellipase10_3 {
+    width: 50px; 
+    height: 50px; 
+    top: 3180px;
+    left: 100px; 
+  }
+  
+  .Ellipase11 {
+    width: 50px; 
+    height: 50px;
+    top: 2500px; 
+    left: 50px; 
+  }
+  
+  .Ellipase12 {
+    width: 50px; 
+    height: 50px; 
+    top: 3350px; 
+    left: 900px; 
+  }
+  
+  .Ellipase13 {
+    width: 50px; 
+    height: 50px; 
+    top: 2700px; 
+    left: 1200px; 
+  }
+  .Ellipase14 {
+    width: 1000px; 
+    height: 1000px; 
+    top: 2900px; 
+    left: 400px; 
+  }
+  
+  /* Vector container and images */
+  .Vector_cntainer {
+    position: absolute; /* Allow precise positioning of images */
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Lower z-index to ensure it’s behind other components */
+
+  }
+  
+  .Vector_cntainer img {
+    position: absolute; /* Position each image absolutely */
+  }
+  
+  /* Vector Images - Replace these values with those from Figma */
+  .Vector1 {
+    width: 345px; 
+    height: 103px;
+    top: 400px;
+    left: 230px;
+  }
+  
+  .Vector2 {
+    width: 700px; 
+    height: 600px;
+    top: 0px; 
+    left: 690px; 
+  }
+  
+  .Vector3 {
+    width: 715px;
+    height: 215px;
+    top: 900px;
+    left: 650px; 
+  }
+  
+  .Vector4 {
+    width: 200px; 
+    height: 200px; 
+    top: 500px; 
+    left: 1000px; 
+  }
+  
+  .Vector5 {
+    width: 50px;
+    height: 50px;
+    top: 700px; 
+    left: 50px; 
+  }
+  
+  .Vector5_2 {
+    width: 50px;
+    height: 50px;
+    top: 1070px; 
+    left: 400px; 
+  }
+  
+  .Vector6 {
+    width: 130px; 
+    height: 130px; 
+    top: 1260px; 
+    left: 250px; 
+  }
+  
+  .Vector7 {
+    width: 140px;
+    height: 140px; 
+    top: 1850px; 
+    left: 1200px; 
+  }
+  
+  .Vector8 {
+    width: 150px;
+    height: 150px; 
+    top: 1550px; 
+    left: 450px;
+  }
+  .Vector8_2{
+    width: 150px;
+    height: 150px; 
+    top: 2250px; 
+    left: 1 0px;
+  }
+  
+  .Vector9 {
+    width: 160px; 
+    height: 160px; 
+    top: 3600px; 
+    left: 1000px; 
+  }
+  
+  .Vector10 {
+    width:104px; 
+    height: 70px;
+    top: 3600px; 
+    left: 50px; 
+  }
+  

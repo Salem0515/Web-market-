@@ -1,0 +1,152 @@
+.Service {
+    margin-top: 150px;
+    margin-left: 50px;
+    text-align: center;
+    position: relative; /* Ensure they participate in stacking context */
+    z-index: 3; /* Higher z-index to ensure they’re above background layers */
+}
+
+.Service h1 {
+    color: #FFF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.tabels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.tabels .basic, 
+.tabels .Premium {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px; /* Adjusted width for consistency */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tabels .basic:hover,
+.tabels .Premium:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tabels h2 {
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tabels h2 span {
+    color: #623AFF;
+}
+
+.tabels h3 {
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tabels ul {
+    list-style: none;
+    text-align: left; /* Align list items to the left */
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-right: 0;
+}
+
+.tabels ul li {
+    margin-bottom: 10px;
+}
+
+.color_white {
+    color: #FFF;
+}
+
+.gary {
+    color: #888; /* Lighter color for unavailable features */
+}
+
+.Get {
+    background: linear-gradient(135deg, #623AFF, #3B8DFF); /* Gradient color */
+    color: #FFF;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.Get:hover {
+    background: linear-gradient(135deg, #4e2bbf, #2A6AEF);
+}
+
+.info {
+    width: 84px;
+    height: 29px;
+    margin-top: 20px; /* Adjusted spacing */
+}
+
+.arrow {
+    width: 113px;
+    height: 10px;
+    margin-top: 20px; /* Adjusted spacing */
+    padding-left: 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1024px) {
+    .Service {
+        margin-left: 20px;
+        margin-right: 20px; /* Added right margin for better alignment */
+    }
+
+    .tabels {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center; /* Center-align the cards */
+    }
+
+    .tabels .basic, 
+    .tabels .Premium {
+        width: 90%; /* Make the cards responsive */
+        max-width: 500px; /* Limit the maximum width */
+    }
+
+    .Service h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabels {
+        gap: 20px;
+    }
+
+    .tabels .basic, 
+    .tabels .Premium {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .Service h1 {
+        font-size: 36px;
+    }
+}

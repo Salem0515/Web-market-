@@ -1,0 +1,16 @@
+html, body {
+  background-color: #131313; /* Replace with your desired color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  height: 100%; /* Ensure body takes full height */
+  scroll-behavior: smooth;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Makes sure padding and borders are included in the element's total width and height */
+}
+

@@ -1,0 +1,90 @@
+.AboutUs {
+    position: relative; /* Ensure they participate in stacking context */
+    z-index: 3; /* Higher z-index to ensure they’re above background layers */
+    margin-top: 261px;
+    margin-left: 50px;
+    text-align: center; /* Center align text */
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+  
+  .AboutUs h1 {
+    font-size: 72px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin-bottom: 40px; /* Add space between the title and content */
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: row; /* Stack content vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+    gap: 254px; /* Adjust gap between text and button */
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+  
+  .about p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: -30px;
+    line-height: 1.5; /* Improve readability */
+    max-width: 600px; /* Limit text width */
+    text-align: left;
+  }
+  
+  .About_Us {
+    padding: 12px 24px; /* Slightly larger padding */
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%); /* Gradient background */
+    border: none;
+    color: white;
+    font-size: 18px; /* Larger font size */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded corners */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth background and transform transitions */
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.4); /* Glowing shadow */
+  }
+  
+  .About_Us:hover {
+    background: linear-gradient(90deg, rgba(255,20,20,1) 0%, rgba(20,20,255,1) 100%); /* Change gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 1024px) {
+    .AboutUs {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+    
+    .about {
+      flex-direction: column; /* Stack content vertically */
+      gap: 20px; /* Adjust gap for better fit */
+    }
+    
+    .about p {
+      margin-left: 0; /* Remove negative margin */
+      text-align: center; /* Center align text */
+    }
+  
+    .About_Us {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+      font-size: 16px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .AboutUs h1 {
+      font-size: 48px; /* Adjust font size for smaller screens */
+    }
+    
+    .about {
+      gap: 20px; /* Reduce gap for smaller screens */
+    }
+  
+    .About_Us {
+      padding: 8px 16px; /* Further adjust padding */
+      font-size: 14px; /* Adjust font size */
+    }
+  }
+  

@@ -1,0 +1,119 @@
+/* General Styling */
+.Scrolling {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .Scrolling img {
+    position: relative; /* Ensure they participate in stacking context */
+    z-index: 3; /* Higher z-index to ensure they’re above background layers */
+    display: flex;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  
+  .Scrolling img:hover {
+    fill: #f94d1b; /* Change color on hover */
+    cursor: pointer;
+  }
+  
+  .form {
+    position: relative; /* Ensure they participate in stacking context */
+    z-index: 3; /* Higher z-index to ensure they’re above background layers */
+    width: 1100px; /* Adjust based on your design needs */
+    height: 260px;
+    padding: 20px; /* Add padding for inner spacing */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 50px; /* Space between elements */
+    margin-top: 167px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the frosted glass effect */
+    border-radius: 10px; /* Rounded corners for the form */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for better definition */
+  }
+  
+  .form p {
+    color: white; /* Text color for better readability */
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Line height for better readability */
+  }
+  
+  .form h3 {
+    color: white; /* Heading color */
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Font size for the heading */
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: row; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+  }
+  
+  .inputs input {
+    width: 100%; /* Full width of the container */
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px; /* Adjust font size */
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: white;
+  }
+  
+  .inputs input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter color for placeholder */
+  }
+  
+  .inputs input:focus {
+    outline: none;
+    border-color: #ff007f; /* Change border color on focus */
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter background on focus */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .form {
+      width: 90%; /* Adjust form width for smaller screens */
+      height: auto; /* Auto height to accommodate content */
+      margin-top: 100px; /* Adjust top margin */
+    }
+  
+    .inputs {
+      flex-direction: column; /* Stack inputs vertically */
+    }
+  
+    .inputs input {
+      margin-bottom: 10px; /* Space between inputs */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form {
+      width: 100%; /* Full width on very small screens */
+      padding: 15px; /* Adjust padding */
+      margin-top: 50px; /* Adjust top margin */
+    }
+  
+    .inputs input {
+      height: 35px; /* Slightly smaller height */
+      font-size: 14px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form {
+      width: 100%; /* Full width on mobile screens */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .inputs input {
+      height: 30px; /* Smaller height for very small screens */
+      font-size: 12px; /* Smaller font size */
+    }
+  }
+  
