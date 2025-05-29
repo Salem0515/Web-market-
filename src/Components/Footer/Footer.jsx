@@ -14,6 +14,7 @@ const Footer = () => {
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Support">Support</a></li>
+        <li><a href="#Support">Desgined By Mohamed Hussein</a></li>
     </ul>
     <img src={twitter} alt="" />
     <img src={facebook} alt="" />
